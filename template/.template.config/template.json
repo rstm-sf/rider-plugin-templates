@@ -80,7 +80,7 @@
                         ".gitignore",
                         "CHANGELOG.md",
                         "RiderPlugin.sln",
-                        "src/"
+                        "src/**/*"
                     ]
                 }
             ]
