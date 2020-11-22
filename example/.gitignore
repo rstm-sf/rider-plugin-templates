@@ -1,0 +1,16 @@
+/.idea/*
+!/.idea/codeStyles
+!/.idea/dictionaries
+!/.idea/runConfigurations
+/.gradle/
+
+bin/
+build/
+obj/
+
+*.Generated.cs
+*.Generated.kt
+*.user
+
+.vscode/
+.vs/
