@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Rustam Sayfutdinov",
+    "classifications": [
+        "Plugin",
+        "Rider"
+    ],
+    "name": "Rider Plugin",
+    "identity": "Rider.Plugin.Template",
+    "shortName": "rider-plugin",
+    "tags": {
+        "type": "project",
+        "language": "C#"
+    },
+    "sourceName": "RiderPlugin",
+    "preferNameDirectory": true,
+    "SpecialCustomOperations": {
+        "**/*.props": {
+            "operations": [
+                {
+                    "type": "conditional",
+                    "configuration": {
+                        "if": [
+                            "<!--#if"
+                        ],
+                        "endif": [
+                            "<!--#endif"
+                        ],
+                        "trim": "true",
+                        "wholeLine": "true"
+                    }
+                }
+            ]
+        }
+    },
+    "symbols": {
+        "build-only": {
+            "type": "parameter",
+            "dataType": "bool",
+            "defaultValue": "false",
+            "description": "Only emit files related to build infrastructure."
+        },
+        "sdk3": {
+            "type": "parameter",
+            "dataType": "bool",
+            "defaultValue": "false",
+            "description": "Adding .NET Framework Targeting Pack Nuget Packages."
+        },
+        "version": {
+            "type": "parameter",
+            "dataType": "string",
+            "defaultValue": "2020.3",
+            "replaces": "BaseRiderSdkVersion"
+        },
+        "id01": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "guid01",
+            "parameters": {
+                "format": "D"
+            }
+        },
+        "id02": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "guid02",
+            "parameters": {
+                "format": "D"
+            }
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(build-only)",
+                    "exclude": [
+                        ".editorconfig",
+                        ".gitattributes",
+                        ".gitignore",
+                        "CHANGELOG.md",
+                        "RiderPlugin.sln",
+                        "src/"
+                    ]
+                }
+            ]
+        }
+    ],
+    "postActions": [
+        {
+            "condition": "(OS != \"Windows_NT\")",
+            "description": "Make gradlew executable",
+            "manualInstructions": [
+                {
+                    "text": "Make gradlew executable"
+                }
+            ],
+            "actionId": "c30a5cd1-748f-435c-aea8-7377577144c7",
+            "args": {
+                "+x": "gradlew"
+            },
+            "continueOnError": true
+        }
+    ]
+}

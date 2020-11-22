@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageId>Rider.Plugin.Templates</PackageId>
+    <Title>Rider Plugin Templates</Title>
+    <Authors>Rustam Sayfutdinov</Authors>
+    <Description>.NET templates for Rider plugin</Description>
+    <PackageTags>dotnet-new;dotnet-templates;rider-plugin</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright © Rider Plugin Templates Contributors 2020</Copyright>
+    <PackageProjectUrl>https://github.com/rstm-sf/rider-plugin-templates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rstm-sf/rider-plugin-templates.git</RepositoryUrl>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputPath>bin</OutputPath>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="template\**\*"
+             Exclude="template\build\**;**\.idea\**;**\.gradle\**;**\bin\**;**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

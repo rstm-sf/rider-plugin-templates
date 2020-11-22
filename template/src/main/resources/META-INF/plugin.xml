@@ -1,0 +1,17 @@
+<idea-plugin require-restart="true">
+    <id>_PLACEHOLDER_</id>
+    <name>_PLACEHOLDER_</name>
+    <version>_PLACEHOLDER_</version>
+    <vendor url="https://project-url">Author</vendor>
+
+    <depends>com.intellij.modules.rider</depends>
+
+    <description>Smth description</description>
+
+    <application-components />
+
+    <extensions defaultExtensionNs="com.intellij" />
+
+    <actions />
+
+</idea-plugin>

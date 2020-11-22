@@ -1,0 +1,3 @@
+rootProject.name = 'riderplugin'
+
+include ':protocol'

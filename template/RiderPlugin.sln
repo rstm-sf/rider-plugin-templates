@@ -1,0 +1,16 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{guid01}") = "RiderPlugin", "src\main\csharp\RiderPlugin\RiderPlugin.csproj", "{guid02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{guid02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{guid02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{guid02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{guid02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
