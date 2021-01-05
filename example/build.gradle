@@ -34,16 +34,16 @@ repositories {
 }
 
 wrapper {
-    gradleVersion = '6.1.1'
+    gradleVersion = '6.7.1'
     distributionType = Wrapper.DistributionType.ALL
     distributionUrl = "https://cache-redirector.jetbrains.com/services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
 }
 
 jvmWrapper {
     // https://confluence.jetbrains.com/display/JBR/Release+notes
-    linuxJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_6-linux-x64-b765.15.tar.gz'
-    macJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_6-osx-x64-b765.15.tar.gz'
-    windowsJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_6-windows-x64-b765.15.tar.gz'
+    linuxJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-linux-x64-b1145.63.tar.gz'
+    macJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-osx-x64-b1145.63.tar.gz'
+    windowsJvmUrl = 'https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-windows-x64-b1145.63.tar.gz'
 }
 
 if (!ext.has("BuildConfiguration"))
@@ -125,7 +125,7 @@ rdgen {
 }
 
 patchPluginXml {
-    sinceBuild = '203.5981' // 2020.3 EAP8
+    sinceBuild = '203.6682' // 2020.3
     untilBuild = null
 
     def changelogText = file("$projectDir/CHANGELOG.md").text
