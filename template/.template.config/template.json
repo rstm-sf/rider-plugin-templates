@@ -34,23 +34,11 @@
         }
     },
     "symbols": {
-        "build-only": {
-            "type": "parameter",
-            "dataType": "bool",
-            "defaultValue": "false",
-            "description": "Only emit files related to build infrastructure."
-        },
         "sdk3": {
             "type": "parameter",
             "dataType": "bool",
             "defaultValue": "false",
             "description": "Adding .NET Framework Targeting Pack Nuget Packages."
-        },
-        "version": {
-            "type": "parameter",
-            "dataType": "string",
-            "defaultValue": "2020.3",
-            "replaces": "BaseRiderSdkVersion"
         },
         "id01": {
             "type": "generated",
@@ -69,23 +57,6 @@
             }
         }
     },
-    "sources": [
-        {
-            "modifiers": [
-                {
-                    "condition": "(build-only)",
-                    "exclude": [
-                        ".editorconfig",
-                        ".gitattributes",
-                        ".gitignore",
-                        "CHANGELOG.md",
-                        "RiderPlugin.sln",
-                        "src/**/*"
-                    ]
-                }
-            ]
-        }
-    ],
     "postActions": [
         {
             "condition": "(OS != \"Windows_NT\")",

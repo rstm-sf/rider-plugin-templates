@@ -1,8 +1,8 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{370C8B7B-511F-4596-BF48-7E3B7ACDB6F8}") = "RiderPluginExample", "src\main\csharp\RiderPluginExample\RiderPluginExample.csproj", "{249BDD13-6237-45A7-9873-5E9BA3DA8164}"
+Project("{370C8B7B-511F-4596-BF48-7E3B7ACDB6F8}") = "RiderPluginExample", "src\backend\RiderPluginExample\RiderPluginExample.csproj", "{249BDD13-6237-45A7-9873-5E9BA3DA8164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiderPluginExample.Tests", "src\tests\csharp\RiderPluginExample.Tests\RiderPluginExample.Tests.csproj", "{C829C34C-D2FD-48EA-AC1F-AF79E1FDAA9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiderPluginExample.Tests", "src\backend\RiderPluginExample.Tests\RiderPluginExample.Tests.csproj", "{C829C34C-D2FD-48EA-AC1F-AF79E1FDAA9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,11 +21,11 @@ dependencies {
 
 ext {
     pluginVersionBase = '0.0.1'
-    sdkVersion = 'BaseRiderSdkVersion-SNAPSHOT'
+    sdkVersion = '2020.3-SNAPSHOT'
     rdLibDirectory = {
         new File(intellij.ideaDependency.classes, "lib/rd")
     }
-    dotNetDir = new File(projectDir, "src/main/csharp")
+    dotNetDir = new File(projectDir, "src/backend")
     dotNetPluginId = "RiderPlugin"
 }
 
@@ -58,8 +58,8 @@ version ext.version
 
 sourceSets {
     main {
-        java.srcDir 'src/main/kotlin'
-        resources.srcDir 'src/main/resources'
+        java.srcDir 'src/frontend/main/kotlin'
+        resources.srcDir 'src/frontend/main/resources'
     }
 }
 
@@ -96,8 +96,8 @@ apply plugin: 'com.jetbrains.rdgen'
 
 rdgen {
     def modelDir = new File(projectDir, "protocol/src/main/kotlin/model")
-    def csOutput = new File(projectDir, "src/main/csharp/RiderPlugin/Model")
-    def ktOutput = new File(projectDir, "src/main/kotlin/model")
+    def csOutput = new File(projectDir, "src/backend/RiderPlugin/Model")
+    def ktOutput = new File(projectDir, "src/frontend/main/kotlin/model")
 
     verbose = true
     classpath {

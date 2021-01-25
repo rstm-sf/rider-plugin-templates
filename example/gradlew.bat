@@ -24,7 +24,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 setlocal
 
 set BUILD_DIR=%APP_HOME%build\
-set JVM_TARGET_DIR=%BUILD_DIR%gradle-jvm\jbrsdk-11_0_9_1-windows-x64-b1145.63-259e11\
+set JVM_TARGET_DIR=%BUILD_DIR%gradle-jvm\jbrsdk-11_0_9_1-windows-x64-b1145.63-36591d\
 
 set JVM_TEMP_FILE=jvm-windows-x64.tar.gz
 set JVM_URL=https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-windows-x64-b1145.63.tar.gz

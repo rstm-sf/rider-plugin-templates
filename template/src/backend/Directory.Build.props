@@ -13,6 +13,12 @@
     <OutputPath>bin\$(MSBuildProjectName)\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <SdkVersion>2020.3.2</SdkVersion>
+    <WaveVersionBase>$(SdkVersion.Substring(2,2))$(SdkVersion.Substring(5,1))</WaveVersionBase>
+    <WaveVersion>$(WaveVersionBase).0.0$(SdkVersion.Substring(8))</WaveVersion>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
     <DefineConstants>TRACE;DEBUG;JET_MODE_ASSERT</DefineConstants>
   </PropertyGroup>
@@ -21,4 +27,11 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
+<!--#if (sdk3)-->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies"
+                      Version="1.0.0"
+                      PrivateAssets="All" />
+  </ItemGroup>
+<!--#endif-->
 </Project>

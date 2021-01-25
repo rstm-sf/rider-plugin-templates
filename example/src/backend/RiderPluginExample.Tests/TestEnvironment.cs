@@ -9,7 +9,7 @@ using RiderPluginExample.Tests;
 [assembly: Apartment(ApartmentState.STA)]
 
 #pragma warning disable 618
-[assembly: TestDataPathBase("../../../data/csharp")]
+[assembly: TestDataPathBase("data")]
 #pragma warning restore 618
 
 namespace RiderPluginExample.Tests

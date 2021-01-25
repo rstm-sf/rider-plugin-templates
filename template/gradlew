@@ -72,15 +72,15 @@ BUILD_DIR=$APP_HOME/build
 if [ "$darwin" = "true" ]; then
     JVM_TEMP_FILE=$BUILD_DIR/jvm-macosx-x64.tar.gz
     JVM_URL=https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-osx-x64-b1145.63.tar.gz
-    JVM_TARGET_DIR=$BUILD_DIR/gradle-jvm/jbrsdk-11_0_9_1-osx-x64-b1145.63-eac3fc
+    JVM_TARGET_DIR=$BUILD_DIR/gradle-jvm/jbrsdk-11_0_9_1-osx-x64-b1145.63-166c5e
 elif [ "$cygwin" = "true" ] || [ "$msys" = "true" ]; then
     JVM_TEMP_FILE=$BUILD_DIR/jvm-windows-x64.zip
     JVM_URL=https://d3pxv6yz143wms.cloudfront.net/11.0.4.11.1/amazon-corretto-11.0.4.11.1-windows-x64.zip
-    JVM_TARGET_DIR=$BUILD_DIR/jbrsdk-11_0_9_1-windows-x64-b1145.63-259e11
+    JVM_TARGET_DIR=$BUILD_DIR/jbrsdk-11_0_9_1-windows-x64-b1145.63-36591d
 else
     JVM_TEMP_FILE=$BUILD_DIR/jvm-linux-x64.tar.gz
     JVM_URL=https://bintray.com/jetbrains/intellij-jbr/download_file?file_path=jbrsdk-11_0_9_1-linux-x64-b1145.63.tar.gz
-    JVM_TARGET_DIR=$BUILD_DIR/gradle-jvm/jbrsdk-11_0_9_1-linux-x64-b1145.63-b12616
+    JVM_TARGET_DIR=$BUILD_DIR/gradle-jvm/jbrsdk-11_0_9_1-linux-x64-b1145.63-120e95
 fi
 
 set -e

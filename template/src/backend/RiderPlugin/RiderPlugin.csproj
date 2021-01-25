@@ -1,7 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\..\Versions.props" />
-
   <ItemGroup>
     <PackageReference Include="JetBrains.Rider.SDK" Version="$(SdkVersion)" PrivateAssets="All" />
     <PackageReference Include="Wave" Version="$(WaveVersion)" />
